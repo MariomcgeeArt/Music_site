@@ -4,5 +4,11 @@ from . import views
 
 urlpatterns = [
   path('', views.home, name='home'),
-  path('classical/', views.classical_songs, name='classical')
+  path('classical/', views.classical_songs, name='classical'),
+  path('',views.artist_list_view, name='artist'),
+  path('artist/<int:artist_id>/', views.artist_detail_view, name='artists'),
+  path('album/<int:album_id>/', views.album_detail, name='album'),
+  path('song/<int:song_id>/', views.song_detail, name='song'),
+ 
+  
 ]

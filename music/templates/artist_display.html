@@ -1,0 +1,11 @@
+<center><h1>Musicians</h1></center>
+
+<ul>
+  {% for musician in musicians %}
+  <center>
+    <li>
+      <a href="/music/musician/{{ musician.id }}">{{ musician.name }}</a>
+    </li>
+  </center>
+  {% endfor %}
+</ul>

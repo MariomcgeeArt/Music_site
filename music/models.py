@@ -1,3 +1,4 @@
+
 from django.db import models
 
 class Musician(models.Model):
@@ -14,6 +15,7 @@ class Album(models.Model):
 
     def __str__(self):
       return self.name
+
 
 
 class Song(models.Model):
