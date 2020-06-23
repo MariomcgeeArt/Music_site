@@ -1,10 +1,10 @@
 <center><h1>Musicians</h1></center>
 
 <ul>
-  {% for musician in musicians %}
+  {% for artist in artists %}
   <center>
     <li>
-      <a href="/music/musician/{{ musician.id }}">{{ musician.name }}</a>
+      <a href="/artist/{{ artist.id }}">{{ artist.name }}</a>
     </li>
   </center>
   {% endfor %}
